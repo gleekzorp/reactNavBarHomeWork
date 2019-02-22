@@ -1,18 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { NavLink } from "react-router-dom"
 
-export default class NavigationComponent extends Component {
-    constructor() {
-        super()
-    }
-
-    render() {
+export default function() {
         return (
-            <div>
-                <NavLink exact to="/" activeClassName="nav-link-active">Home</NavLink>
-                <NavLink exact to="/about" activeClassName="nav-link-active">About</NavLink>
-                <NavLink exact to="/contact" activeClassName="nav-link-active">Contact</NavLink> 
+            <div className="navLinks">
+                <NavLink to="/">HOME</NavLink>
+                <NavLink to="/about">ABOUT</NavLink>
+                <NavLink to="/contact">CONTACT</NavLink> 
+                <NavLink to="/counter">COUNTER</NavLink>
             </div>
         )
     }
-}

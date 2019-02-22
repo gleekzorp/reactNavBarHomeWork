@@ -5,7 +5,7 @@ import NavigationContainer from './navigationContainer/navigationContainer'
 import Home from './pages/home'
 import About from './pages/about'
 import Contact from './pages/contact'
-import Counter from './counter'
+import Counter from './pages/counter'
 
 
 export default class App extends Component {
@@ -15,14 +15,15 @@ export default class App extends Component {
         <Router>
           <div>
             <NavigationContainer />
+            <hr/>
               <Switch>
-                <Route exact path='/' component={Home} />
+                <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
-                <Route path="/Contact" component={Contact} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/counter" component={Counter} />                
               </Switch>
           </div>
         </Router>
-        <Counter />
       </div>
     );
   }

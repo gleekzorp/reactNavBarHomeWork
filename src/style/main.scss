@@ -26,3 +26,21 @@ body {
     display: grid;
     justify-items: center;
 }
+
+.navLinks {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentWrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.counterWrapper {
+    display: grid;
+    justify-content: center;
+}

@@ -16,7 +16,7 @@ class Counter extends Component {
 
     render() {
         return (
-            <div>
+            <div className="counterWrapper">
                 <p>Your number is: {this.state.count}</p>
                 <button onClick={() => this.onButtonClick("Add")}>Click to Add</button>
                 <button onClick={() => this.onButtonClick("Minus")}>Click to Minus</button>
